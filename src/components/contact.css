@@ -1,0 +1,382 @@
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+.title{
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid red; */
+  width: 80%;
+}
+.contact-title{
+  position: relative;
+  margin-bottom: 35px;
+
+}
+.contact-title h1{
+  padding: 0px 20px;
+  font-size: 50px;
+  font-weight: 600;
+  
+}
+.contact-title img{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: -1;
+}
+/* .contact-title{
+  position: relative;
+
+}
+.contact-title h1{
+  padding: 0px 20px;
+  font-size: 50px;
+  font-weight: 600;
+  
+}
+.contact-title img{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: -1;
+} */
+
+.contact-section{
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  gap: 90px;
+}
+.contact-left{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+.contact-left h1{
+  font-size:35px;
+}
+
+.contact-left h1 span{
+  background:linear-gradient(267deg, #DF8908 10%, #ea03ad 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-left p{
+  width: 100%;
+  color:#D8D8D8;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contact-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  color: #D8D8D8;
+  font-style: 18px;
+}
+
+.contact-detail{
+  display: flex;
+  gap: 20px;
+  align-items: start;
+}
+.contact-detail img{
+  width: 35px;
+  height: 35px;
+}
+
+.contact-right{
+  width: 45%;
+  display: flex;
+  flex-direction: column; 
+  align-items: start;
+  gap: 15px;
+}
+.contact-right label{
+  color: #D8D8D8;
+  font-size: 16px;
+}
+
+.contact-right input{
+  border: none;
+  width: 90%;
+  height: 45px;
+  padding-left: 20px;
+  border-radius: 3px;
+  background: hsl(240, 9%, 22%);
+  color: #A0A0A0;
+  font-family: outfit;
+  font-size: 16px;
+}
+
+.contact-right textarea{
+  width: 90%;
+  border: none;
+  padding-left: 20px;
+  padding-top:20px ;
+  border-radius: 3px;
+  background: hsl(240, 9%, 22%);
+  color: #A0A0A0;
+  font-size: 16px;
+  font-family: outfit;
+  
+}
+.boc
+{
+  border-right-color: #D8D8D8;
+}
+a{
+  text-decoration: none;
+  color: #D8D8D8;
+}
+
+.contact-submit{
+  padding: 15px 35px;
+  border-radius: 50px;
+  background:linear-gradient(267deg, #DF8908 -5.09%, #B923E1 106.28%);
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+  border: none;
+  margin-bottom: 50px;
+}
+.contact-submit:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+@media(max-width:768px){
+  .title{
+    display: flex;
+    justify-content: start;
+    width: 88%;
+  }
+  .contact-title h1{
+    padding: 0;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .contact-title img{
+    width: 80px;
+    bottom: 0px;
+    right: -20px;
+  }
+  .contact-section{
+    width: 85%;
+    gap: 50px;
+    flex-direction: column;
+  }
+  .contact-left{
+    width: 100%;
+  }
+  .contact-right{
+    width: 100%;
+  }
+  .contact-right input{
+    width: 100%;
+
+  }
+  .contact-right textarea{
+    width: 100%;
+  }
+
+  .contact-left h1{
+    font-size: 40px;
+
+  }
+  .contact-detail{
+    gap: 20px;
+  }
+}
+body.light .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body.light .contact-title {
+  position: relative;
+}
+
+body.light .contact-title h1 {
+  padding: 0px 20px;
+  font-size: 50px;
+  font-weight: 600;
+  color: black; 
+}
+
+body.light .contact-title img {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: -1;
+}
+
+body.light .contact-section {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  gap: 90px;
+}
+
+body.light .contact-left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+body.light .contact-left h1 {
+  font-size: 35px;
+  color: black; /* Dark text color for better readability */
+}
+
+body.light .contact-left h1 span {
+  background: linear-gradient(267deg, #DF8908 10%, #ea03ad 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.light .contact-left p {
+  width: 100%;
+  color: black; /* Dark text color */
+  font-size: 16px;
+  line-height: 20px;
+}
+
+body.light .contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  color:black; /* Dark text color */
+  font-style: 18px;
+}
+
+body.light .contact-detail {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+}
+
+body.light .contact-detail img {
+  width: 35px;
+  height: 35px;
+}
+
+body.light .contact-right {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+
+body.light .contact-right label {
+  color: #333; /* Dark text color */
+  font-size: 15px;
+}
+
+body.light .contact-right input {
+  border: none;
+  width: 90%;
+  height: 45px;
+  padding-left: 20px;
+  border-radius: 3px;
+  background: #d1d1d1ec; /* Light background */
+  color: #333; /* Dark text color */
+  font-family: outfit;
+  font-size: 16px;
+}
+
+body.light .contact-right textarea {
+  width: 90%;
+  border: none;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-radius: 3px;
+  background: #d1d1d1ec; /* Light background */
+  color: #333; /* Dark text color */
+  font-size: 16px;
+  font-family: outfit;
+}
+
+body.light a {
+  text-decoration: none;
+  color: #333; /* Dark text color */
+}
+
+body.light .contact-submit {
+  padding: 15px 35px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #DF8908 -5.09%, #B923E1 106.28%);
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+  border: none;
+  margin-bottom: 50px;
+}
+
+body.light .contact-submit:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+@media(max-width:768px) {
+  body.light .contact {
+    margin-top: 30px;
+    gap: 30px;
+  }
+  body.light .contact-title h1 {
+    padding: 0;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  body.light .contact-title img {
+    width: 85px;
+    bottom: 0px;
+    right: -20px;
+  }
+  body.light .contact-section {
+    width: 85%;
+    gap: 50px;
+    flex-direction: column;
+  }
+  body.light .contact-left {
+    width: 100%;
+  }
+  body.light .contact-right {
+    width: 100%;
+  }
+  body.light .contact-right input {
+    width: 100%;
+  }
+  body.light .contact-right textarea {
+    width: 100%;
+  }
+  body.light .contact-left h1 {
+    font-size: 40px;
+  }
+  body.light .contact-detail {
+    gap: 20px;
+  }
+}
